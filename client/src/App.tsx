@@ -50,6 +50,8 @@ const candidates: Candidate[] = [
   },
 ];
 
+const demoResults: Record<CandidateId, number> = { lula: 54, flavio: 46 };
+
 const demoVoteKey = "segunda-eleicao-demo-vote";
 
 function hasDemoVote() {
@@ -236,6 +238,31 @@ function App() {
             <span className="step-number">03</span>
             <div><strong>Confirme</strong><p>Uma participação por pessoa.</p></div>
           </div>
+        </section>
+
+        <section className="poll-snapshot" aria-labelledby="poll-snapshot-title">
+          <div className="poll-snapshot__heading">
+            <div>
+              <span className="section-label">Termômetro da enquete</span>
+              <h2 id="poll-snapshot-title">Quem está na frente?</h2>
+            </div>
+            <span className="demo-pill"><Vote size={14} /> Demonstração</span>
+          </div>
+          <p className="poll-snapshot__intro">Este painel mostra números ilustrativos para a interface. A apuração real será carregada quando o Supabase estiver conectado.</p>
+          <div className="poll-results">
+            {candidates.map((candidate) => (
+              <div className={`poll-result poll-result--${candidate.id}`} key={candidate.id}>
+                <div className="poll-result__topline">
+                  <span>{candidate.shortName}</span>
+                  <strong>{demoResults[candidate.id]}%</strong>
+                </div>
+                <div className="poll-result__track" aria-label={`${candidate.shortName}: ${demoResults[candidate.id]} por cento demonstrativo`}>
+                  <span style={{ width: `${demoResults[candidate.id]}%` }} />
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="poll-snapshot__footer"><span><span className="live-dot" /> Painel visual</span><span>Sem resultado oficial</span></div>
         </section>
 
         <Progress step={step} />

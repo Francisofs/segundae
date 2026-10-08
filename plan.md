@@ -72,6 +72,7 @@ O wordmark combina `SEB` em caixa alta com a assinatura “Segundo Eleição” 
 - `client/public/assets/candidates/`: fotos públicas locais dos candidatos.
 - `client/src/pages/Playground.tsx`: segunda página `/brincar`, com estúdio de molduras, brilho, corações e confetes equivalentes para as duas fotos.
 - `client/public/manus-routes.json`: declaração das rotas públicas da aplicação.
+- A página inicial também inclui um termômetro visual com percentuais demonstrativos, identificado como não oficial até a integração com o Supabase.
 - `plan.md`: decisões de produto, arquitetura e design.
 - `TODO.md`: entregas e critérios concretos para a próxima fase.
 

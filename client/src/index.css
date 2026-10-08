@@ -69,6 +69,21 @@ h1 em { color: var(--green); font-style: normal; }
 .how-it-works strong { display: block; font-size: 0.83rem; }
 .how-it-works p { margin: 0.12rem 0 0; color: var(--ink-soft); font-size: 0.73rem; }
 .progress { margin: 0.5rem 0 1.2rem; }
+.poll-snapshot { margin: 0.6rem 0 1.5rem; padding: 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); box-shadow: 0 10px 28px rgba(22, 34, 31, 0.05); }
+.poll-snapshot__heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; }
+.poll-snapshot h2 { margin: 0.35rem 0 0; font-size: clamp(1.65rem, 7vw, 2.65rem); line-height: 1; }
+.demo-pill { display: inline-flex; align-items: center; gap: 0.32rem; padding: 0.38rem 0.5rem; border-radius: 999px; background: var(--yellow-soft); color: #785817; font-size: 0.6rem; font-weight: 800; white-space: nowrap; }
+.poll-snapshot__intro { max-width: 660px; margin: 0.75rem 0 1rem; color: var(--ink-soft); font-size: 0.72rem; line-height: 1.5; }
+.poll-results { display: grid; gap: 0.8rem; }
+.poll-result__topline { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.35rem; font-size: 0.76rem; font-weight: 700; }
+.poll-result__topline strong { color: var(--green); font-size: 0.9rem; }
+.poll-result--flavio .poll-result__topline strong { color: #8b651b; }
+.poll-result__track { overflow: hidden; height: 0.72rem; border-radius: 999px; background: var(--paper-deep); }
+.poll-result__track span { display: block; height: 100%; border-radius: inherit; background: var(--green); transition: width 500ms ease; }
+.poll-result--flavio .poll-result__track span { background: var(--yellow); }
+.poll-snapshot__footer { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1rem; padding-top: 0.7rem; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 0.62rem; }
+.poll-snapshot__footer span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.live-dot { width: 0.42rem; height: 0.42rem; border-radius: 50%; background: var(--coral); }
 .progress__labels { display: flex; justify-content: space-between; margin-bottom: 0.45rem; color: var(--ink-soft); font-size: 0.68rem; font-weight: 700; }
 .progress__track { overflow: hidden; height: 0.28rem; border-radius: 99px; background: var(--paper-deep); }
 .progress__track span { display: block; height: 100%; border-radius: inherit; background: var(--green); transition: width 350ms ease; }
