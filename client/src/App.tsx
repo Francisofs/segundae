@@ -50,7 +50,7 @@ const candidates: Candidate[] = [
   },
 ];
 
-const demoResults: Record<CandidateId, number> = { lula: 54, flavio: 46 };
+const demoResults: Record<CandidateId, number> = { lula: 46, flavio: 54 };
 
 const demoVoteKey = "segunda-eleicao-demo-vote";
 
