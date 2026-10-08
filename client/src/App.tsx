@@ -13,6 +13,8 @@ import {
   Sparkles,
   Vote,
 } from "lucide-react";
+import { useLocation } from "wouter";
+import Playground from "./pages/Playground";
 
 type Step = "intro" | "register" | "vote" | "complete";
 type CandidateId = "lula" | "flavio";
@@ -127,6 +129,7 @@ function Progress({ step }: { step: Step }) {
 }
 
 function App() {
+  const [, setLocation] = useLocation();
   const [step, setStep] = useState<Step>(() => (hasDemoVote() ? "complete" : "intro"));
   const [email, setEmail] = useState("");
   const [birthDate, setBirthDate] = useState("");
@@ -169,6 +172,10 @@ function App() {
     setReactions((previous) => ({ ...previous, [candidateId]: !previous[candidateId] }));
   };
 
+  if (window.location.pathname === "/brincar") {
+    return <Playground onBack={() => setLocation("/")} />;
+  }
+
   return (
     <main className="site-shell">
       <div className="page-frame">
@@ -207,6 +214,12 @@ function App() {
             <span><Heart size={15} /> Debate com respeito</span>
           </div>
         </section>
+
+        <button className="playground-entry" type="button" onClick={() => setLocation("/brincar")}>
+          <span className="playground-entry__icon"><Sparkles size={18} /></span>
+          <span><strong>Quer brincar com as fotos?</strong><small>Abra o estúdio de molduras e efeitos saudáveis</small></span>
+          <ArrowRight size={18} />
+        </button>
 
         <div className="content-divider"><span>Como funciona</span></div>
 

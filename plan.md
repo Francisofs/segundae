@@ -70,7 +70,8 @@ O wordmark combina `SEB` em caixa alta com a assinatura “Segundo Eleição” 
 - `client/src/App.tsx`: fluxo da interface, cadastro demonstrativo, seleção de candidato, interações nas fotos e confirmação.
 - `client/src/index.css`: tokens visuais, layout responsivo, estados de foco e animações.
 - `client/public/assets/candidates/`: fotos públicas locais dos candidatos.
-- `client/public/manus-routes.json`: declaração da rota pública da aplicação.
+- `client/src/pages/Playground.tsx`: segunda página `/brincar`, com estúdio de molduras, brilho, corações e confetes equivalentes para as duas fotos.
+- `client/public/manus-routes.json`: declaração das rotas públicas da aplicação.
 - `plan.md`: decisões de produto, arquitetura e design.
 - `TODO.md`: entregas e critérios concretos para a próxima fase.
 
