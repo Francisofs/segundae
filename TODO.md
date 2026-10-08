@@ -1,0 +1,9 @@
+# Entregas do protótipo — Segundo Eleição no Brasil
+
+- [ ] **Interface mobile-first da enquete independente** — A página inicial deve identificar o projeto como uma enquete independente, recreativa e não oficial; explicar que não representa pesquisa nem resultado eleitoral; funcionar em telas estreitas e manter áreas de toque confortáveis.
+- [ ] **Cadastro básico antes da votação** — O fluxo deve solicitar e-mail e data de nascimento, exigir o preenchimento dos dois campos e um consentimento explícito para uso dos dados no protótipo antes de liberar a tela de votação.
+- [ ] **Apresentação equilibrada dos candidatos** — A tela de votação deve apresentar Lula e Flávio Bolsonaro com foto, nome e espaço visual equivalente, sem CTA, cor ou hierarquia que favoreça um dos dois.
+- [ ] **Interações saudáveis nas fotos** — Cada foto deve oferecer a mesma interação visual decorativa, sem texto ofensivo, sem edição depreciativa e sem alterar a identificação do candidato.
+- [ ] **Escolha e confirmação de voto** — A pessoa deve conseguir selecionar exatamente um candidato, receber feedback visual da seleção e ver uma confirmação clara após enviar o voto, sem percentuais ou apuração inventada.
+- [ ] **Bloqueio demonstrativo de repetição** — O protótipo deve lembrar localmente que o voto já foi enviado e mostrar a confirmação em novo acesso; o código deve deixar explícito que o bloqueio real depende de Supabase/Auth e restrição única no banco.
+- [ ] **Privacidade e créditos** — A interface deve informar que e-mail e data de nascimento são dados de demonstração nesta versão, indicar a finalidade da coleta, incluir referência às imagens públicas usadas e não inserir credenciais de serviço no frontend.
